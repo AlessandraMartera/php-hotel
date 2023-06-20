@@ -7,6 +7,14 @@
     rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
     crossorigin="anonymous">
     <title>php hotels</title>
+
+    <style>
+        table{
+            
+            margin: 50px 0;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
 
@@ -14,6 +22,13 @@
 senza preoccuparvi dello stile (vedi `var_dump`). 
 Dopo aggiungete `Bootstrap` e mostrate le informazioni 
 con **una tabella**. -->
+
+<!-- 
+    Aggiungere un form ad inizio pagina
+    che tramite una richiesta `GET` permetta 
+    di **filtrare gli hotel che hanno un parcheggio** 
+-->
+
 
     <?php
         $hotels = [
@@ -58,21 +73,30 @@ con **una tabella**. -->
            
         
         echo "<table class='table'>";
-        
+
+        // echo "<tr>";
+                    
+        //     foreach ($hotels as $key => $value){
+               
+           
+        //     };
+            
+        // echo "</tr>";
+
         foreach ($hotels as $hotel) {
-    
+           
             echo "<tr>";
-            
-            foreach ($hotel as $value) {
+             
+            foreach ($hotel as $key => $value) {
+               
                 echo "<td>". $value . "</td>";
-            }
-            
+            };
+
             echo "</tr>";
         };
-
+        
         echo "</table>";
     ?>
-        
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
