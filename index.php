@@ -72,32 +72,34 @@ con **una tabella**. -->
         ];
            
         
-        echo "<table class='table'>";
+        // echo "<table class='table'>";
 
-        // echo "<tr>";
-                    
-        //     foreach ($hotels as $key => $value){
-               
-           
-        //     };
-            
-        // echo "</tr>";
+        // // echo "<tr>";
+        // //     foreach ($hotels as $key => $value){
+        // //     };
+        // // echo "</tr>";
 
-        foreach ($hotels as $hotel) {
+        // foreach ($hotels as $hotel) {
            
-            echo "<tr>";
+        //     echo "<tr>";
              
-            foreach ($hotel as $key => $value) {
-               
-                echo "<td>". $value . "</td>";
-            };
-
-            echo "</tr>";
-        };
+        //     echo "<td>". $hotel['name'] . "</td>";
+            
+        //     echo "</tr>";
+        // };
         
-        echo "</table>";
+        // echo "</table>";
     ?>
 
+<table class='table'>
+    <tr>
+        <td><?php echo $hotel['name'] ?></td>  
+        <td><?php echo $hotel['name'] ?></td>  
+        <td><?php echo $hotel['name'] ?></td>  
+        <td><?php echo $hotel['name'] ?></td>  
+        <td><?php echo $hotel['name'] ?></td>  
+    </tr>
+</table>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
